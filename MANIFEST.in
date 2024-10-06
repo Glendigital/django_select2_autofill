@@ -1,0 +1,1 @@
+recursive-include src/django_select2_autofill/static *
