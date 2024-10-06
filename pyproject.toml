@@ -34,4 +34,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/bglendenning/django_select2_autofill"
+Homepage = "https://github.com/Glendigital/django_select2_autofill"
