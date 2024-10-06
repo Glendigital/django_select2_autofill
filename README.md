@@ -1,11 +1,12 @@
 # django_select2_autofill
 
 `django_select2_autofill` is a Django app that allows newly added Django admin inline
-form fields to be automatically filled with data from the last user-selected option of
-the same field in a form produced by a shared formset.
+form autocomplete fields to be automatically filled with data from the last
+user-selected option of the same autocomplete field in a form produced by a shared
+formset.
 
-This allows for an end-user to more efficiently input new data in instances where
-multiple field values may be shared across formset forms.
+This allows end-users to more efficiently input new data in instances where one value
+may be shared across `ModelAdmin` formset form autocomplete fields.
 
 ## Install
 
@@ -14,7 +15,7 @@ multiple field values may be shared across formset forms.
    python -m pip install django-select2-autofill
    ```
 
-2. Add ``django_select2_autofill`` to your Django `INSTALLED_APPS` setting:
+2. Add `django_select2_autofill` to your Django `INSTALLED_APPS` setting:
 
    ```python
    INSTALLED_APPS = [
@@ -23,8 +24,8 @@ multiple field values may be shared across formset forms.
    ]
    ```
 
-3. Use the ``AutofillAutocompleteSelect`` widget in the ``ModelForm`` containing
-   ``autocomplete_fields``:
+3. Use the `AutofillAutocompleteSelect` widget in the `ModelForm` containing
+   `autocomplete_fields`:
 
    ```python
    from django import admin
@@ -41,7 +42,7 @@ multiple field values may be shared across formset forms.
            }
    ```
 
-   Note that ``admin.site`` can be replaced with a custom ``AdminSite`` instance, if
+   Note that `admin.site` can be replaced with a custom `AdminSite` instance, if
    necessary:
 
    ```python
