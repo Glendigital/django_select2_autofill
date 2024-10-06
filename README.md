@@ -26,8 +26,6 @@ multiple field values may be shared across formset forms.
    from django import forms
    from django_select2_autofill import AutofillAutocompleteSelect
 
-   from app.models import CustomModel
-
 
    class CustomForm(forms.ModelForm):
        class Meta:
@@ -42,6 +40,10 @@ multiple field values may be shared across formset forms.
    necessary:
 
    ```python
+   # ...
+   from app.models import CustomModel
+
+
    # ...
    widgets = {
        "model_field_name": AutofillAutocompleteSelect(
