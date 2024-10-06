@@ -9,7 +9,12 @@ multiple field values may be shared across formset forms.
 
 ## Install
 
-1. Add ``django_select2_autofill`` to your Django `INSTALLED_APPS` setting:
+1. With a Django project virtual environment activated:
+   ```sh
+   python -m pip install django-select2-autofill
+   ```
+
+2. Add ``django_select2_autofill`` to your Django `INSTALLED_APPS` setting:
 
    ```python
    INSTALLED_APPS = [
@@ -18,7 +23,7 @@ multiple field values may be shared across formset forms.
    ]
    ```
 
-2. Use the ``AutofillAutocompleteSelect`` widget in the ``ModelForm`` containing
+3. Use the ``AutofillAutocompleteSelect`` widget in the ``ModelForm`` containing
    ``autocomplete_fields``:
 
    ```python

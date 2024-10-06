@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django_select2_autofill"
-version = "0.1"
+version = "0.1.2"
 dependencies = [
     "django>=4.2",
 ]
-description = "A django app to autofill admin Select2 fields in admin inline forms."
-readme = "README.rst"
+description = "A django app to autofill Select2 fields in admin inline forms."
+readme = "README.md"
 requires-python = ">= 3.8"
 authors = [
     {name = "Brandan Glendenning", email = "brandan@glendigi.com"},
@@ -34,4 +34,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://glendigi.com/"
+Homepage = "https://github.com/bglendenning/django_select2_autofill"
