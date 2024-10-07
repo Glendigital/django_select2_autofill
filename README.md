@@ -28,8 +28,7 @@ may be shared across `ModelAdmin` formset form autocomplete fields.
    `autocomplete_fields`:
 
    ```python
-   from django import admin
-   from django import forms
+   from django import admin, forms
    from django_select2_autofill import AutofillAutocompleteSelect
 
 
@@ -47,7 +46,7 @@ may be shared across `ModelAdmin` formset form autocomplete fields.
 
    ```python
    # ...
-   from app.models import CustomModel
+   from app.admin import CustomAdminSite
 
 
    # ...
